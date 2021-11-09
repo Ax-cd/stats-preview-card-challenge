@@ -1,18 +1,5 @@
-/* ## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px */
-
-
-
-/* REMEMBER TO TRY ON DIFFERENT BROWSERS! */
-/* ADD BORDERS FOR BETTER VIEW OF ELEMENTS' PLACE */
-
 body {
     background-color: hsl(233, 47%, 7%);
-    /* font-size: 15px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +8,6 @@ body {
 }
 
 .card {
-    /* border: 1px solid yellow; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,7 +19,6 @@ body {
 
 
 .main {
-    /* border: 3px solid blueviolet; */
     width: 500px;
     height: 400px;
     padding-left: 30px;
@@ -44,7 +29,6 @@ body {
 }
 
 h1 {
-    /* border: 2px solid springgreen; */
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
@@ -58,7 +42,6 @@ h1 {
 }
 
 .main-paragraph {
-    /* border: 2px solid skyblue; */
     font-family: 'Inter', sans-serif;
     font-size: 15px;
     color: hsla(0, 0%, 100%, 0.75);
@@ -70,7 +53,6 @@ h1 {
 
 
 .stats-paragraph {
-    /* border: 2px solid sienna; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -79,7 +61,6 @@ h1 {
 }
 
 .stat {
-    /* border: 2px solid yellow; */
     width: 80px;
     padding: 5px;
     margin: 0 0 100px 0;
@@ -102,13 +83,7 @@ h1 {
 
 
 
-/* image is colored violet but HOW??*/
-/* filter and -webkit-filter work with sepia but how to change color to purple? Nothing change with hue-rotate (because the image is in black and white?) */
-/* Ok so, combining background-color and opacity work just fine! */
-/* Add filter brightness() for more precision */
-
 .image-header {
-    /* border: 1px solid yellow; */
     width: 540px;
     height: 400px;
     border-radius: 0 6px 6px 0;
@@ -116,7 +91,6 @@ h1 {
 }
 
 .image-header img {
-    /* border: 1px solid red; */
     width: 540px;
     height: 400px;
     border-radius: 0 6px 6px 0;
@@ -129,7 +103,6 @@ h1 {
 /* Attribution at the bottom of the page */
 
 .attribution {
-    /* border: 1px solid palevioletred; */
     color: hsla(0, 0%, 100%, 0.75);
     text-align: center;
     display: flex;
@@ -154,7 +127,7 @@ h1 {
 
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 500px) {
     body {
         display: flex;
         flex-direction: column;
@@ -164,13 +137,11 @@ h1 {
     }
 
     .card {
-        /* border: 1px solid yellow; */
         display: flex;
         flex-direction: column-reverse;
-        /* align-items: center; */
         justify-content: space-between;
         background-color: hsl(244, 38%, 16%);
-        width: 320px;
+        width: 375px;
         height: 720px;
         border-radius: 6px;
         padding-bottom: 50px;
@@ -179,18 +150,16 @@ h1 {
 
 
     .image-header {
-        /* border: 1px solid yellow; */
-        width: 320px;
-        height: 250px;
+        width: 375px;
+        height: 265px;
         border-radius: 6px 6px 0 0;
         background-color: hsl(278, 96%, 55%);
     }
     
     .image-header img {
         display: url(images/image-header-mobile.jpg);
-        /* border: 1px solid red; */
-        width: 320px;
-        height: 250px;
+        width: 375px;
+        height: 265px;
         border-radius: 6px 6px 0 0;
         opacity: 70%;
         filter: brightness(0.60);
@@ -198,12 +167,9 @@ h1 {
 
 
     .main {
-        /* border: 3px solid blueviolet; */
         width: 285px;
         height: 465px;
-        /* padding-left: 30px; */
         display: flex;
-        /* flex-direction: column; */
         align-items: center;
         justify-content: center;
     }
@@ -227,7 +193,6 @@ h1 {
 
 
     .stats-paragraph {
-        /* border: 2px solid sienna; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -239,7 +204,6 @@ h1 {
     }
     
     .stat {
-        /* border: 2px solid yellow; */
         text-align: center;
         width: 80px;
         margin: 0 0 20px 0;
